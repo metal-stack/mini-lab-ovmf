@@ -13,7 +13,7 @@ RUN apt-get update && \
 
 ARG EDK2_TAG=edk2-stable202408.01
 
-RUN git clone --depth 1 "https://github.com/tianocore/edk2.git" -b ${TAG} --recurse-submodules --shallow-submodules
+RUN git clone --depth 1 "https://github.com/tianocore/edk2.git" -b ${EDK2_TAG} --recurse-submodules --shallow-submodules
 
 WORKDIR /edk2
 
